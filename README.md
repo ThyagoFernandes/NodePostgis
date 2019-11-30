@@ -21,6 +21,11 @@ CREATE EXTENSION postgis;
 ```
 create table places(lat_lng geography(Point,4326),place_name varchar(50));
 ```
+## container initialization demo
+![](pgdemo1.gif)
+
+## geospatial database configuration
+![](pgdemo2.gif)
 
 ## project setup
 ```
