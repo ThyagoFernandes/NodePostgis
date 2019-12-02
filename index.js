@@ -28,8 +28,8 @@ switch (op) {
     
     break;
   case 2:
-
-    pool.query('select *, ST_Distance(lat_lng, ST_MakePoint(-73.9903, 40.7570)::geography)from places where ST_DWithin(lat_lng, ST_MakePoint(-73.98241999999999, 40.579505)::geography, 1000)order by ST_Distance(lat_lng, ST_MakePoint(-126.4, 45.32)::geography);', (err, res) => {
+    // -73.98241999999999 - 40.579505
+    pool.query('select *, ST_Distance(lat_lng, ST_MakePoint(-73.9903, 40.7570)::geography)from places where ST_DWithin(lat_lng, ST_MakePoint(-73.9903, 40.7570)::geography, 1000)order by ST_Distance(lat_lng, ST_MakePoint(-126.4, 45.32)::geography);', (err, res) => {
       // for (i = 0; i < res.rows.length; i++);
       const list = res.rows;
       const after = Date.now();
