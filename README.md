@@ -21,6 +21,11 @@ CREATE EXTENSION postgis;
 ```
 create table places(lat_lng geography(Point,4326),place_name varchar(50));
 ```
+
+## creating index in database 
+```
+create index places_lat_lng_idx on places using gist(lat_lng);
+```
 ## container initialization demo
 ![](pgdemo1.gif)
 
