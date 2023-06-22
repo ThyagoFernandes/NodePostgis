@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ThyagoFernandes/Node_postgis/blob/master/README.md",
   "dependencies": {
-    "pg": "^7.11.0",
+    "pg": "^8.11.0",
     "pg-format": "^1.0.4"
   },
   "devDependencies": {
